@@ -48,7 +48,7 @@ module.exports = function(grunt) {
       if (options.production) {
         item += ' --production';
       }
-      if (options.allowRoot) {
+      if (option('allow-root')) {
         item += ' --allow-root';
         grunt.log.writeln('with root');
       }
