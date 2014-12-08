@@ -48,9 +48,8 @@ module.exports = function(grunt) {
       if (options.production) {
         item += ' --production';
       }
-      console.log(options);
+      grunt.log.writeln(options);
       if (options.allowRoot) {
-        console.log('123');
         item += ' --allow-root';
       }
       var cmd = exec(item, {cwd: cwd}, function(error, stdout, stderr) {
